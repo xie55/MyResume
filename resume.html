@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 18px;
+        }
+
+        h {
+            color: white;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #container {
+            margin: 20px;
+            border: 2px solid #D9D9D9;
+            background-color: #F5F6FB;
+            padding: 20px;
+        }
+
+        header h1 {
+            background-color: #337AB7;
+            padding-left: 100px;
+            margin-bottom: 5px;
+            color: white;
+            height: 80px;
+            line-height: 80px;
+            font-size: 80px;
+            border-radius: 0px 40px 40px 0px;
+            width: 900px;
+            vertical-align: middle;
+        }
+
+        section {
+            position: relative;
+            border: 2px solid #D9D9D9;
+            margin-top: 50px;
+            padding-top: 35px;
+        }
+
+        section:nth-of-type(1) {
+            padding-top: 30px;
+            border: 2px solid #D9D9D9;
+            margin-top: 30px;
+        }
+
+        section:nth-of-type(1)>div:nth-of-type(1) {
+            display: inline-block;
+            width: 200px;
+        }
+
+        section:nth-of-type(1)>div:nth-of-type(2) {
+            display: inline-block;
+            width: 680px;
+            vertical-align: middle;
+
+        }
+
+        .tab-label {
+            position: absolute;
+            left: -2;
+            top: -24px;
+        }
+
+        .basic-info {
+            margin-top: 30px;
+        }
+
+        .basic-info span {
+            display: inline-block;
+            width: 200px;
+            margin-left: 10px;
+        }
+
+        .skills li {
+            margin-top: 6px;
+        }
+        .experice{
+            margin-left: 50px;
+        }
+        .experice dd{
+            margin-left: 50px;
+        }
+        .certificate{
+            text-align: center;
+        }
+        .certificate img{
+            width: 300px;
+        }
+        #major{
+            width: 152px;
+        }
+        /* #main{
+            margin-bottom: 200px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 class="glyphicon glyphicon-briefcase">Resume</h1>
+        </header>
+        <section id="header">
+            <button type="button" class="btn btn-primary btn-lg tab-label" style="text-shadow: black 5px 3px 3px;">
+                <span class="glyphicon glyphicon-user"></span> 基本信息
+            </button>
+            <div>
+                <img src="images/证件照.JPG" style="width: 160px;;" alt="证件照">
+            </div>
+            <div>
+                <h1>谢松武</h1>
+                <div class="basic-info">
+                    <span class="glyphicon glyphicon-flag"> 在校，目前在找工作</span>
+                    <span class="glyphicon glyphicon-phone">17771434166</span>
+                    <span class="glyphicon glyphicon-envelope">1083229231@qq.com</span>
+                </div>
+                <div class="basic-info">
+                    <span class="glyphicon glyphicon-user"> 男</span>
+                    <span class="glyphicon glyphicon-time"> 24岁|未婚</span>
+                    <span class="glyphicon glyphicon-send"> 2021应届毕业生</span>
+                </div>
+                <div class="basic-info">
+                    <span class="glyphicon glyphicon-tags"> 武汉轻工大学大学</span>
+                    <span class="glyphicon glyphicon-tags"> 计算机技术</span>
+                    <span class="glyphicon glyphicon-tags"> 硕士研究生</span>
+                </div>
+            </div>
+        </section>
+        <section id="main">
+            <button type="button" class="btn btn-primary btn-lg tab-label" style="text-shadow: black 5px 3px 3px;">
+                <span class="glyphicon glyphicon-bookmark"></span> 求职意向
+            </button>
+
+            <table class="table table-bordered">
+                <tr>
+                    <td style="width: 15%;">期望薪资：</td>
+                    <td style="width: 35%;">10k/月</td>
+                    <td style="width: 15%;">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点：</td>
+                    <td style="width: 35%;">武汉 </td>
+                </tr>
+                <tr>
+                    <td>职能/职位：</td>
+                    <td>前端工程师 </td>
+                    <td>行&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业： </td>
+                    <td>软件开发 </td>
+                </tr>
+                <tr>
+                    <td>到岗时间：</td>
+                    <td>1周内实习或毕业后全职</td>
+                    <td>工作类型：</td>
+                    <td>全职 </td>
+                </tr>
+            </table>
+            <div>
+                <h3  style="padding-left: 50px;">自我评价</h3>
+                <div style="padding-left: 100px;">
+                    <ul class="skills">
+                        <li>1、熟练掌握<code>HTML</code>、<code>CSS</code>和<code>原生Javascript</code>基础，能够写出符合W3C规范的页面；</li>
+                        <li>2、熟悉 <code>HTML5</code>、<code>CSS3</code>和<code>ES6</code>新特性，并进行响应式开发；</li>
+                        <li>3、熟练使用 <code>BootStrap</code>,和<code>jQuery</code>快速搭建项目；</li>
+                        <li>4、对前端性能优化有一定了解，了解基本<code>SEO</code>知识；</li>
+                        <li>5、熟悉计算机网络相关知识，了解<code>HTTPS</code>、<code>HTTPS</code>、<code>TCP</code>网络协议；</li>
+                        <li>6、熟悉<code>Vue+Vue-router+VueX</code>，熟练掌握<code>Vue生命周期</code>、<code>计算属性</code>、<code>Vue指令</code>、
+                            <code>组件通信</code>和<code>Element UI</code>组件库，会用<code>vue-cli</code>脚手架构建项目；</li>
+                        <li>7、熟悉使用<code>ECharts</code>前端可视化图表库；</li>
+                        <li>7、使用过<code>SSM</code>和<code>FastAPI</code>后端框架，掌握<code>ajax</code>、<code>axios</code>前后端交互技术，
+                            会用<code>PostMan</code>进行后端接口调试；</li>
+                        <li>8、了解<code>MVC</code>、<code>MVVM</code>分层思想、理解<code>前后端分离</code>开发模式；</li>
+                        <li>7、熟悉使用用<code>git</code>版本管理工具；</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <button type="button" class="btn btn-primary btn-lg tab-label" style="text-shadow: black 5px 3px 3px;">
+                <span class="glyphicon glyphicon-bookmark"></span> 教育经历
+            </button>
+            <table class="table table-bordered">
+                    <tr>
+                        <td>时间：</td>
+                        <td>2015.9-2019.6</td>
+                        <td>学校：</td>
+                        <td>武汉轻工大学</td>
+                        <td>学位：</td>
+                        <td>学士</td>
+                        <td>专业：</td>
+                        <td>材料化学 </td>
+                    </tr>
+                </table>
+
+            <table class="table table-bordered">
+                    <tr>
+                        <td>时间：</td>
+                        <td>2019.9-2021.6</td>
+                        <td>学校：</td>
+                        <td>武汉轻工大学</td>
+                        <td>学位：</td>
+                        <td>硕士</td>
+                        <td>专业：</td>
+                        <td id="major">计算机技术</td>
+                    </tr>
+                </table>           
+        </section>
+
+        <section>
+            <button type="button" class="btn btn-primary btn-lg tab-label" style="text-shadow: black 5px 3px 3px;">
+                <span class="glyphicon glyphicon-bookmark"></span>技能特长、证书
+            </button>
+            <table class="table table-bordered">
+                    <tr>
+                        <td>语言：</td>
+                        <td>英语：<code>cet-6</code></td>
+                    </tr>
+            </table>
+
+        </section>
+
+        <section>
+            <button type="button" class="btn btn-primary btn-lg tab-label" style="text-shadow: black 5px 3px 3px;">
+                <span class="glyphicon glyphicon-bookmark"></span> 项目经验
+            </button>
+            <div>
+                <h3 style="padding-left: 50px;">土壤重金属含量预测及可视化系统<small>毕业设计的一部分</small></h3>
+                <div style="padding-left: 100px;">
+                    <p>
+                        <dl>
+                            <dt>项目简介</dt>
+                            <dd>项目后端使用<code>SSM</code>搭建，前端使用<code>vue+element ui</code>搭建，数据库使用<code>MySQL</code>;</dd>
+                            <dd>使用Python后台框架<code>FastAPI</code>将神经网络预测算法模型制作成<code>API接口</code>提供前端使用；</dd>
+                            <dd>前端通过<code>axios</code>和后台进行交互；</dd>
+                            <dd>使用<code>vue-router</code>实现页面跳转；</dd>
+                            <dd>使用<code>ECharts</code>对数据进行可视化，绘制神经网络模型对比折线图和污染评估饼状图等；</dd>
+                            <dd>使用<code>vue-amap</code>封装的<code>高德地图API</code>构建土壤污染空间特征分布图;</dd>
+                            <dd>实现了<code>用户登录</code>、<code>可视化空间特征分布图</code>和<code>可视化污染评估图</code>等功能</dd>
+                            <!-- <dt>技术要点</dt>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dt>ttttttttt</dt>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd> -->
+                            </dl>
+                    </p>
+                    <p>
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div>
+                <h3 style="padding-left: 50px;">在线简历<small></small></h3>
+                <div style="padding-left: 100px;">
+                    <p>
+                        <dl>
+                            <dt>项目简介</dt>
+                            <dd>用<code>BootStrap</code>搭建的静态在线简历</dd>
+                            <!-- <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dt>ttttttttt</dt>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dt>ttttttttt</dt>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+                            </dl> -->
+                    </p>
+                    <p>
+
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
